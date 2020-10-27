@@ -1,0 +1,1 @@
+"use strict";var headerRef=document.querySelector("header");window.addEventListener("scroll",function(){headerRef.classList.toggle("white_bg",0<window.scrollY)});
