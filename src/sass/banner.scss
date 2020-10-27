@@ -1,0 +1,40 @@
+.banner {
+}
+
+.banner_slider-item {
+  color: #ffffff;
+  background-image: url('../images/banner.png');
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner_content {
+  padding: 0 20px;
+  text-align: center;
+  h1 {
+    font-family: $title-text;
+    margin-bottom: 50px;
+    span {
+      color: #f61067;
+    }
+  }
+  p {
+    line-height: 30px;
+    max-width: 420px;
+    margin: auto;
+  }
+  .banner_btn {
+    background: #f61067;
+    border-radius: 4px;
+    color: #fff;
+    width: 240px;
+    height: 50px;
+    border: none;
+    margin-top: 50px;
+  }
+}

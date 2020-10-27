@@ -1,0 +1,48 @@
+.contacts {
+  background-color: #150433;
+  &_inner {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &_info {
+    color: #fff;
+  }
+  &_title {
+    text-align: center;
+  }
+
+  &_adress-item {
+    width: 296px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    i {
+      margin-right: 20px;
+    }
+  }
+  &_details {
+    background-color: #fff;
+    color: #000;
+    padding: 25px 0;
+  }
+}
+
+.detail-list {
+  padding: 25px 0;
+}
+
+.detail-item {
+  padding: 0 20px;
+  margin: 15px 0;
+  i {
+    margin-right: 15px;
+  }
+}
+
+.schedule {
+  display: flex;
+  align-items: center;
+}
