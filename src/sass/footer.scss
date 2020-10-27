@@ -1,0 +1,36 @@
+.footer {
+  width: 100%;
+  background-color: #150433;
+  padding: 15px 0;
+  &_inner {
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    color: #fff;
+    .logo a {
+      font-family: 'Nunito';
+      font-size: 20px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  &_nav {
+    display: none;
+    li {
+      margin: 0 35px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer_nav {
+    display: flex;
+    li {
+      margin: 0 35px;
+    }
+  }
+}

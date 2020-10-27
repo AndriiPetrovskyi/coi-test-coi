@@ -1,7 +1,8 @@
 .prof {
+  // height: 80vh;
   background-color: #150433;
   color: #fff;
-  padding: 35px;
+  padding: 50px 0;
   &_inner {
     padding: 0 20px;
     display: flex;
@@ -10,7 +11,7 @@
   }
   &_info {
     text-align: center;
-    max-width: 380px;
+    // max-width: 380px;
   }
   &_btn {
     background: #f61067;
@@ -30,16 +31,92 @@
 
 @media screen and (min-width: 768px) {
   .prof {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &_inner {
       padding: 0 20px;
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
+      width: 700px;
     }
     &_info {
       text-align: left;
-      max-width: 380px;
+      width: 320px;
+      h2 {
+        line-height: 40px;
+      }
+      p {
+        line-height: 22px;
+      }
+    }
+    &_img img {
+      width: 80%;
+      display: block;
+      margin: auto;
+      // position: relative;
     }
   }
+  // .prof_img::after {
+  //   content: '';
+  //   position: absolute;
+  //   height: 250px;
+  //   width: 150px;
+  //   background-color: $color-pink;
+  //   top: -25px;
+  //   right: -25px;
+  //   z-index: 999;
+  // }
+}
+
+@media screen and (min-width: 1280px) {
+  .prof {
+    &_inner {
+      width: 1200px;
+      justify-content: start;
+    }
+    &_img img {
+      width: 100%;
+      display: block;
+      margin: auto;
+    }
+
+    .prof_info {
+      width: 500px;
+      margin-right: 40px;
+      h2 {
+        font-size: 50px;
+        line-height: 78px;
+        margin-top: 0;
+      }
+      p {
+        width: 380px;
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: 600px;
+      }
+    }
+    .prof_btn {
+      background: #f61067;
+      border-radius: 4px;
+      color: #fff;
+      width: 346px;
+      height: 65px;
+      border: none;
+      margin-top: 50px;
+      font-size: 20px;
+    }
+  }
+  // .prof_img::after {
+  //   content: '';
+  //   position: absolute;
+  //   height: 250px;
+  //   width: 150px;
+  //   background-color: $color-pink;
+  //   top: -25px;
+  //   right: -25px;
+  //   z-index: 999;
+  // }
 }

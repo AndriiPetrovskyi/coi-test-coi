@@ -6,6 +6,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .help_img img {
@@ -72,5 +74,49 @@
   .help_inner {
     flex-direction: row;
     justify-content: center;
+    min-width: 700px;
+  }
+  .help_img img {
+    width: 90%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .help_inner {
+    flex-direction: row;
+    justify-content: start;
+    width: 1200px;
+  }
+  .form {
+    margin-left: 80px;
+  }
+
+  .form_header {
+    h2 {
+      font-size: 50px;
+      line-height: 78px;
+      margin-top: 0;
+    }
+    p {
+      width: 380px;
+      font-size: 25px;
+      line-height: 40px;
+      font-weight: 600px;
+    }
+  }
+
+  .help_img img {
+    width: 100%;
+  }
+  .form_btn {
+    background: #f61067;
+    border-radius: 4px;
+    color: #fff;
+    width: 346px;
+    height: 65px;
+    border: none;
+    margin-top: 50px;
+    font-size: 20px;
   }
 }

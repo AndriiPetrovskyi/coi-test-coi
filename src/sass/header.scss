@@ -1,6 +1,9 @@
 .header {
   position: fixed;
+  padding: 10px 0;
   width: 100%;
+  max-width: 1920px;
+  transition: 0.2s;
   &_inner {
     max-width: 1200px;
     display: flex;
@@ -13,6 +16,9 @@
   &_logo {
     // font-weight: bold;
     font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: inherit;
   }
   &_menu {
     display: flex;
@@ -28,6 +34,7 @@ nav {
   padding-bottom: 5px;
   margin: 0 35px;
   color: inherit;
+  font-weight: 400;
   &:hover {
     border-bottom: 2px solid #fff;
   }
@@ -41,5 +48,23 @@ nav {
     &_burger-menu {
       visibility: hidden;
     }
+  }
+}
+
+.white_bg {
+  background-color: #fff;
+  padding: 5px 0;
+  .header_logo {
+    color: #000;
+  }
+  .haeder_menu-item a {
+    color: #000;
+    transition: 0.1s;
+  }
+  .haeder_menu-item a:hover {
+    border-bottom: 2px solid $color-pink;
+  }
+  .header_burger-menu i {
+    color: #000;
   }
 }
