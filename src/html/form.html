@@ -2,33 +2,34 @@
     <div class="container">
         <div class="help_inner">
             <div class="help_img">
-                <img src="./images/form_img.png" width="95%" alt="">
+                <div class="form_img-overlay"></div>
+                <img class="form_img" src="./images/form_img.png" width="95%" alt="">
             </div>
             <form class="form">
                 <div class="form_header">
                     <p>Допомога</p>
-                    <h2>Запитайте у професіоналів</h2>
+                    <h2>Запитайте у <span>професіоналів</span></h2>
                 </div>
 
                 <ul class="form_list">
                     <li class="name">
-                        <label for="name">Ім'я*</label>
-                            <input type="text" id="name" name="name" placeholder="Ваше ім'я">
+                        <label for="name">Ім'я<span>*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
                         
                     </li>
                     <li class="emali">
-                        <label for="email">Email*</label>
-                            <input type="email" id="email" name="email" placeholder="Ваша почта">
+                        <label for="email">Email<span>*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Ваша почта" required>
            
                     </li>
                     <li class="phone">
-                        <label for="phone">Телефон*</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+38 (099) 999 99 99">
+                        <label for="phone">Телефон<span>*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="+38 (099) 999 99 99" required>
                 
                     </li>
                     <li class="select">
                         <label for="select">
-                            <select name="select" id="">
+                            <select name="select" id="select" required>
                                 <option value="Punkt1">Punkt1</option>
                                 <option value="Punkt2">Punkt2</option>
                                 <option value="Punkt3">Punkt3</option>

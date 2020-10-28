@@ -10,7 +10,13 @@
   margin: 0 auto;
 }
 
-.help_img img {
+.help_img {
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+.form_img {
   display: block;
   margin: auto;
 }
@@ -20,12 +26,22 @@
   max-width: 440px;
   &_header {
     text-align: center;
+    h2 {
+      span {
+        color: $color-pink;
+      }
+    }
   }
 }
 
 .form_list li {
   display: block;
-  margin: 20px 0;
+  margin: 10px 0;
+  label {
+    span {
+      color: $color-pink;
+    }
+  }
 }
 
 .form_list input {
@@ -33,6 +49,8 @@
   padding: 10px 15px;
   border-radius: 4px;
   border: 1px solid #000;
+  font-size: 16px;
+  height: 50px;
 }
 
 .form_list select {
@@ -40,6 +58,7 @@
   padding: 10px 15px;
   border-radius: 4px;
   border: 1px solid #000;
+  height: 50px;
 }
 
 .form textarea {
@@ -83,6 +102,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .help {
+    margin-top: 100px;
+  }
   .help_inner {
     flex-direction: row;
     justify-content: start;
@@ -93,6 +115,7 @@
   }
 
   .form_header {
+    text-align: left;
     h2 {
       font-size: 50px;
       line-height: 78px;
@@ -103,6 +126,7 @@
       font-size: 25px;
       line-height: 40px;
       font-weight: 600px;
+      margin: 0;
     }
   }
 
@@ -116,7 +140,18 @@
     width: 346px;
     height: 65px;
     border: none;
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 20px;
+  }
+  .form_img-overlay {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: $color-pink;
+    top: -5%;
+    left: -10%;
+  }
+  .form_img {
+    position: relative;
   }
 }
