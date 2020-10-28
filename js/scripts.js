@@ -1,1 +1,1 @@
-"use strict";var headerRef=document.querySelector("header");window.addEventListener("scroll",function(){headerRef.classList.toggle("white_bg",0<window.scrollY)});
+"use strict";var headerRef=document.querySelector("header"),menuListRef=document.querySelector(".header_menu"),burgerMenuRef=document.querySelector(".header_burger-menu");window.addEventListener("scroll",function(){headerRef.classList.toggle("white-bg",0<window.scrollY)}),burgerMenuRef.addEventListener("click",function(){menuListRef.classList.toggle("show-menu")});
