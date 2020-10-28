@@ -83,7 +83,14 @@
   display: block;
 }
 
-.checkbox--radiobtn-list {
+.radiobtn-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.checkbox-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -150,9 +157,75 @@
     height: 100%;
     background-color: $color-pink;
     top: -5%;
-    left: -10%;
+    left: -7%;
   }
   .form_img {
     position: relative;
   }
+}
+
+// ================== POPUP
+
+.form_popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form_popup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 70%;
+  max-width: 700px;
+  height: 316px;
+  border-radius: 4px;
+  position: relative;
+  padding: 25px 77px;
+}
+
+.form_popup-content {
+  h3 {
+    color: #000;
+    font-size: 30px;
+    line-height: 50px;
+    font-family: 'Georgia';
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 36px;
+    max-width: 500px;
+    text-align: center;
+  }
+}
+
+.form_popup-img i {
+  font-size: 44px;
+  color: $color-pink;
+  margin-bottom: 0;
+}
+
+.close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.form_popup-active {
+  display: flex;
 }
