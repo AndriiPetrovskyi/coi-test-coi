@@ -1,3 +1,7 @@
+$(document).ready(function(){
+    $('#phone').mask('+38(099)999 99 99')
+});
+
 const formRef = document.querySelector('form');
 const formBtnRef = document.querySelector('.form_btn');
 const popupFormRef = document.querySelector('.form_popup');
