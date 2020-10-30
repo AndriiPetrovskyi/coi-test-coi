@@ -1,32 +1,21 @@
 const adressListRef = document.querySelector('.contacts_adress-list');
 
-console.log(adressListRef)
+adressListRef.addEventListener('click', onActiveItemClick)
 
-adressListRef.addEventListener('click', (event) => {
-    console.log(event.target)
-})
+function onActiveItemClick(event) {
+   if(event.target.nodeName !== 'BUTTON') {
+    return;
+  }
 
+  const currentActiveItem = event.currentTarget.querySelector('.active-item-adress');
+  if(currentActiveItem) {
+    currentActiveItem.classList.remove('active-item-adress');
+  }
 
+  const nextListItem = event.target;
+  nextListItem.classList.add('active-item-adress');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 

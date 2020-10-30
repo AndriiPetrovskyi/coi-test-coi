@@ -11,16 +11,17 @@
   &_info {
     color: #fff;
   }
-  &_title {
+  &_title h2 {
     text-align: center;
+    margin-top: 0;
   }
 
   &_adress-item {
     width: 296px;
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
+    // padding: 10px 15px;
+    // display: flex;
+    // align-items: center;
+    margin: 5px 0;
     font-family: $title-text;
     i {
       margin-right: 20px;
@@ -33,6 +34,20 @@
     border-radius: 4px;
     z-index: 999;
   }
+}
+
+.adress_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #150433;
+  color: #fff;
+  padding: 25px 15px 25px 25px;
+  border: none;
+  line-height: 28px;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
 }
 
 .detail-list {
@@ -66,7 +81,7 @@
 #map {
   height: 300px;
   width: 100%;
-  background-color: khaki;
+  // background-color: khaki;
   margin: 20px 0;
 }
 
@@ -86,7 +101,7 @@
   #map {
     height: 400px;
     width: 400px;
-    background-color: khaki;
+    // background-color: khaki;
     margin: 20px 0;
   }
 }

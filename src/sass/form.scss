@@ -54,6 +54,10 @@
   height: 50px;
 }
 
+input:valid {
+  border: 2px solid green;
+}
+
 .form_list select {
   width: 100%;
   padding: 10px 15px;
