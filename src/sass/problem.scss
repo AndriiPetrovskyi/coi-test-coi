@@ -1,7 +1,6 @@
 .problem {
   width: 100%;
   margin: 50px auto;
-  // height: 100vh;
   &_inner {
     padding: 0 20px;
     display: flex;
@@ -51,7 +50,7 @@
   color: #fff;
   padding: 50px 25px;
   position: absolute;
-  width: 60%;
+  // width: 60%;
   height: 40%;
   bottom: 0;
   right: 0;
@@ -136,7 +135,6 @@
     position: absolute;
     width: 40%;
     max-width: 420px;
-    // height: 40%;
     top: 0;
     right: 0;
   }
@@ -161,6 +159,9 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .problem {
+    height: 100vh;
+  }
   .problem_title {
     p {
       font-size: 24px;
