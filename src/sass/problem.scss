@@ -1,0 +1,191 @@
+.problem {
+  width: 100%;
+  margin: 50px auto;
+  // height: 100vh;
+  &_inner {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+  }
+}
+
+.problem_title {
+  p {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+}
+
+.problem_info {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.problem_info-number p {
+  font-size: 74px;
+  font-family: $title-text;
+  color: $color-pink;
+  margin: 22px;
+}
+
+.problem_info-text p {
+  line-height: 28px;
+  padding: 0 25px;
+}
+
+.img_text {
+  background-color: $color-violet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 50px 25px;
+  position: absolute;
+  width: 60%;
+  height: 40%;
+  bottom: 0;
+  right: 0;
+}
+
+.img_text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quotes {
+  line-height: 0;
+  font-family: $quotes;
+  font-size: 40px;
+  margin: 25px 0;
+}
+
+.img_text-text {
+  font-size: 18px;
+  font-family: $title-text;
+}
+
+.problem_img {
+  position: relative;
+}
+
+.problem_img img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .problem_inner {
+    align-items: flex-start;
+  }
+
+  .problem_title {
+    text-align: left;
+    margin-bottom: 50px;
+    p {
+      text-align: left;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    h2 {
+      text-align: left;
+      margin-top: 10px;
+    }
+  }
+
+  .problem_first {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .problem_info-number p {
+    margin-top: 0;
+    line-height: 20px;
+    padding-bottom: 100px;
+  }
+
+  .problem_info {
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 25px;
+    width: 40%;
+  }
+
+  .img_text {
+    background-color: $color-violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 50px 25px;
+    position: absolute;
+    width: 40%;
+    max-width: 420px;
+    // height: 40%;
+    top: 0;
+    right: 0;
+  }
+
+  .quotes {
+    line-height: 0;
+    font-family: $quotes;
+    font-size: 50px;
+    margin: 25px 0;
+  }
+
+  .img_text-text {
+    font-size: 22px;
+    font-family: $title-text;
+  }
+  .problem_img img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 460px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .problem_title {
+    p {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 50px;
+      line-height: 79px;
+    }
+  }
+
+  .problem_info {
+    margin-right: 40px;
+  }
+
+  .problem_info-number p {
+    font-size: 150px;
+    font-family: $title-text;
+    color: $color-pink;
+    margin: 22px;
+  }
+
+  .problem_info-text p {
+    line-height: 28px;
+    padding: 0 25px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
